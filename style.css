@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#Contenedorpeliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las filas horizontalmente */
+    align-items: center; /* Centra las filas verticalmente */
+    height: 100%;
+    width: 100%;
+}
+
+#pelicula {
+    width: 600px;
+    height: 500px;
+    margin: 10px;
+    text-align: center;
+    align-items: center; /* Esto no tiene efecto en el div, ya que display no es flex o grid */
+    border: 5px solid black;
+    word-wrap: break-word;
+    max-width: 350px;
+    display: flex; /* Agregado: Hace que el div pelicula sea un contenedor flex */
+    flex-direction: column; /* Agregado: Para que los elementos dentro del div se apilen verticalmente */
+    justify-content: space-between; /* Agregado: Espaciado uniforme entre los elementos dentro del div */
+}
+
+img {
+    height: 400px;
+    width: 300px;
+    margin: 5px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
